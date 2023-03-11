@@ -1,0 +1,29 @@
+User story:
+
+As a customer, I want to be able to order food online so that I can easily get my favorite meals delivered to my doorstep without leaving my house.
+
+Use case diagram:
+
+[Customer] --> (Order Food Online)
+(Order Food Online) --> [Restaurant]
+(Order Food Online) --> [Delivery Service]
+
+Class diagram:
+
+Customer
+
+name: string
+address: string
+phone: string
+orderFoodOnline()
+Restaurant
+
+name: string
+menu: string
+receiveOrder()
+Delivery Service
+
+name: string
+address: string
+phone: string
+deliverFood()
